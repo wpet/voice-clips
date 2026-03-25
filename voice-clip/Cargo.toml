@@ -1,0 +1,19 @@
+[package]
+name = "voice-clip"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+alsa = "0.9"
+reqwest = { version = "0.12", features = ["multipart", "rustls-tls"], default-features = false }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = "0.4"
+hound = "3.5"
+anyhow = "1"
+libc = "0.2"
+
+[profile.release]
+strip = true
+lto = true
