@@ -1,0 +1,12 @@
+# Recordings archive
+clips/
+
+# Rust build artifacts
+voice-clip/target/
+
+# Environment / secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
